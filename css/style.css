@@ -633,7 +633,6 @@ padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 60px;
   margin-right: 10px;
 }
@@ -678,14 +677,14 @@ left:0px;
 
 .tab_item {
   display: flex;
-  width: 75%;
+  width: 70%;
 }
 
 .tabs {
-    width: 400px;
     display:flex;
     flex-direction: column;
-    width: 25%;
+ align-items: center;
+    width: 30%;
    /* background-color: rgb(242, 242, 242);*/
      padding-top: 90px;
 }
@@ -872,19 +871,23 @@ padding-bottom: 50px;
 .tab_content_box_container_box{
   width: 100%;
   flex-wrap:wrap-reverse;
-  position: relative;
   padding-bottom: 60px;
+  position: relative;
 }
 .tab_item{
  width: 100%;
  flex-direction: column-reverse;
-align-items: center;
-
+}
+.epilation_zones_btn{
+  width: 200px;
+  height:60px;
+  position: absolute;
+  bottom: 0;
 }
 .removal_zones_content_price {
   width: 100%;
   text-align: center;
-   margin-right: 0px;
+   
 }
 .removal_zones_content_price span{
   width: 100%;
@@ -892,25 +895,23 @@ align-items: center;
 }
 .removal_zones_content{
   padding-top: 10px;
+  position: relative;
 }
 .removal_zones_content_img{
   width: 150px;
   height: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tabs{
 width: 100%;
 padding-top: 0px;
+align-items: center;
 }
 .tab{
 width: 100%;
 }
-.epilation_zones_btn{
-  position: absolute;
-  bottom: 0;
-  left:15%;
-  width: 200px;
-  height:60px;
-}
+
 
   }
  @media (min-width: 641px) and (max-width: 960px){
@@ -1014,6 +1015,58 @@ padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
+.epilation_zones{
+  padding-top: 50px;
+}
+
+.epilation_zones_border{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.tab_content_box_container_box{
+  width: 100%;
+  flex-wrap:wrap-reverse;
+  padding-bottom: 60px;
+  position: relative;
+}
+.tab_item{
+ width: 100%;
+ flex-direction: column-reverse;
+ padding-bottom: 20px;
+}
+.epilation_zones_btn{
+  position: absolute;
+  bottom: 0;
+}
+.removal_zones_content_price {
+  width: 100%;
+  text-align: center;
+   
+}
+.removal_zones_content_price span{
+  width: 100%;
+  transform: rotate(0deg);
+}
+.removal_zones_content{
+  padding-top: 10px;
+  position: relative;
+}
+.removal_zones_content_img{
+  width: 250px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs{
+width: 100%;
+padding-top: 0px;
+align-items: center;
+}
+.tab{
+width: 100%;
+}
+
   }
  @media (min-width: 961px){
 .slider_box_content {
@@ -1075,6 +1128,7 @@ padding-bottom: 50px;
   padding-right: 15px;
   padding-left: 15px;
 }
+
 /*==============================top_socials_container_right==================================*/
 }
 /*@media (min-width: 1600px){
