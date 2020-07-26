@@ -583,11 +583,7 @@ label {
   align-items: center;
 }
 .why_whit_us_container_box_card{
-  margin-right: 30px;
-  width: 33.33%;
-}
-.why_whit_us_container_box_card:last-child{
-  margin-right: 0px;
+  width: 32%;
 }
 
 .why_whit_us_container_box_card_title{
@@ -596,12 +592,11 @@ label {
   font-weight: 400;
   font-size: 20px;
   color: white;
-  text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
   text-transform: uppercase;
   position: relative;
-  align-items: center;
+  justify-content: flex-start;
 }
 .why_whit_us_container_box_card p {
   font-family: 'Roboto', sans-serif;
@@ -610,6 +605,145 @@ label {
    line-height: 24px;
    color: white;
 }
+
+
+.epilation_zones{
+padding-top: 100px;
+padding-bottom: 50px;
+}
+
+.epilation_zones .active { 
+  color: #fc5c65; 
+  opacity: 1;
+  border-bottom: 1px solid #fc5c65;
+  padding-bottom: 10px;
+}
+
+.tab_content_box_container_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.removal_zones_content{
+  padding-top: 80px;
+  
+
+}
+.removal_zones_content_price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  margin-right: 10px;
+}
+.removal_zones_content_price span{
+  display: block;
+  font-size: 50px;
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+  color: red;
+  white-space: nowrap;
+  transform: rotate(270deg);
+}
+.removal_zones_text {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: black;
+  width: 300px;
+  position: relative;
+  letter-spacing: 2px;
+ padding-left: 30px;
+}
+.removal_zones_text::before{
+content: '';
+width: 24px;
+height: 24px;
+background-image: url(../img/ok.svg);
+background-repeat: no-repeat;
+background-size: 24px 24px;
+position: absolute;
+top: 5px;
+left:0px;
+}
+.removal_zones_content_img{
+ position: relative;
+ z-index: 16;
+}
+
+.tab_item {
+  display: flex;
+  width: 75%;
+}
+
+.tabs {
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+   /* background-color: rgb(242, 242, 242);*/
+     padding-top: 90px;
+}
+
+.tab {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color:black;
+  font-size: 40px;
+  line-height: 30px;
+  white-space: nowrap;
+  opacity: 0.4;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.tab span{
+  color: red
+}
+.tab:hover{
+  opacity: 1;
+  color: #fc5c65;
+}
+
+
+.tab::after{
+  display: block;
+    content: "";
+    border-bottom: 1px solid #fc5c65;
+    bottom: 0px;
+    width:0px;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .8s ease-in-out;
+    -moz--transition: width .8s ease-in-out;
+    transition: width .8s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 17;
+    opacity: 0.4
+}
+
+.tab:hover::after,
+.tab:focus::after{
+  width: 200px;
+  opacity: 1;
+}
+
+
+
+
 
 
   @media(max-width: 640px){
@@ -704,16 +838,76 @@ label {
 position: relative;
 padding-top: 50px;
 padding-bottom: 50px;
-
 }
-
+.why_whit_us_content_box{
+  justify-content: center;
+}
 
 .why_whit_us_container_box_card{
   margin-bottom: 20px;
   width: 100%;
+  text-align: center;
 }
 .why_whit_us_container_box_card:last-child{
   margin-bottom: 0px;
+}
+.why_whit_us_container_box_card_title{
+ justify-content: center;
+}
+.why_whit_us_container_box_card p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.epilation_zones{
+  padding-top: 50px;
+}
+
+.epilation_zones_border{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.tab_content_box_container_box{
+  width: 100%;
+  flex-wrap:wrap-reverse;
+  position: relative;
+  padding-bottom: 60px;
+}
+.tab_item{
+ width: 100%;
+ flex-direction: column-reverse;
+
+}
+.removal_zones_content_price {
+  width: 100%;
+  text-align: center;
+   margin-right: 0px;
+}
+.removal_zones_content_price span{
+  width: 100%;
+  transform: rotate(0deg);
+}
+.removal_zones_content{
+  padding-top: 10px;
+}
+.removal_zones_content_img{
+
+}
+.tabs{
+width: 100%;
+padding-top: 0px;
+}
+.tab{
+width: 100%;
+}
+.epilation_zones_btn{
+  position: absolute;
+  bottom: 0;
+  left:15%;
+  width: 200px;
+  height:60px;
 }
 
   }
@@ -796,6 +990,27 @@ position: relative;
 padding-top: 50px;
 padding-bottom: 50px;
 
+}
+.why_whit_us_content_box{
+  justify-content: center;
+}
+.why_whit_us_container_box_card{
+  margin-bottom: 20px;
+  margin-right: 0px;
+  width: 100%;
+  
+  
+}
+.why_whit_us_container_box_card:last-child{
+  margin-bottom: 0px;
+}
+.why_whit_us_container_box_card_title{
+ justify-content: center;
+}
+.why_whit_us_container_box_card p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
   }
  @media (min-width: 961px){
