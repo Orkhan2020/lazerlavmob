@@ -314,9 +314,23 @@ body.lock{
 
 
 /*==============================SLIDER==================================*/
+.mfp-content{
+
+}
+.slider_form_box{
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  
+}
 .form {
-    width: 420px;
+    width: 90%;
     margin: 0 auto;
+   
 }
 label {
     display: block;
@@ -330,15 +344,16 @@ label {
 
 .form__input {
     display: block;
-    width: 420px;
+    width: 100%;
     height: 48px;
     background-color: #ffffff;
     margin-bottom: 30px;
     border:1px solid black;
     padding: 18px 20px;
+   
 }
 .form__button{
-    width: 420px;
+    width: 100%;
     height: 54px;
     background-color: red;
     color: #ffffff;
@@ -346,6 +361,7 @@ label {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    
 }
 .form__button:hover{
     border:solid 1px;
@@ -353,22 +369,30 @@ label {
 }
  
 
- .slider_form_box .mfp-close{
+.mfp-close{
   width: 44px;
-    height: 44px;
-    line-height: 44px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-decoration: none;
-    text-align: center;
-    opacity: .65;
-    padding: 0 0 18px 10px;
-    color: #FFF;
-    font-style: normal;
-    font-size: 28px;
-    font-family: Arial,Baskerville,monospace;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  z-index: 1000;
 }
+  .mfp-close:hover,
+  .mfp-close:focus {
+    opacity: 1;
+  }
+  .mfp-close:active {
+    top: 1px; 
+  }
+
 
  /*==============================POP UP FORM==================================*/
 }
@@ -1584,6 +1608,10 @@ margin-right: 0px;
 .social-media a {
    margin-right: 0px; 
 }
+.slider_form_box{
+width: 100%;
+}
+
 
 
   }
