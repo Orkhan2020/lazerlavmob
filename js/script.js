@@ -82,6 +82,45 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $('.gallery').slick({
+    arrows:false,
+    dots:false,
+    rows:2,
+    slidesPerRow:4,
+    autoplay:false,
+    speed:1000,
+    autoplaySpeed:5000,
+    adaptiveHeight: true,
+    responsive:[
+     {
+        breakpoint: 1150,
+        settings: {
+          rows:2,
+          slidesPerRow:4,
+          autoplay:false
+         }
+        },
+      {
+        breakpoint: 768,
+        settings: {
+          rows:2,
+          slidesPerRow:4,
+          autoplay:true
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          rows:2,
+          slidesPerRow:2,
+          autoplay:true
+        }
+      }
+    ],
+    appendDots:$('')
+  });
+});
+$(document).ready(function(){
   $('.testimonials__').slick({
     arrows:false,
     dots:false,
