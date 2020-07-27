@@ -318,6 +318,7 @@ body.lock{
 
 }
 
+
 /*==============================SLIDER==================================*/
 .form {
     width: 420px;
@@ -401,7 +402,7 @@ label {
  }
 
 .btn-default {
-     background-color: black;
+     background-color: #dc143c;
     }
 .btn-default:hover {
     background-color: #fc5c65;
@@ -971,9 +972,6 @@ margin-right: 20px;
   transform: scale(1.1);
   transition: all 1s ease 0s;
 }
-
-
-
 .our_staf_card img{
   display: block;
   margin-bottom: 10px;
@@ -991,7 +989,41 @@ margin-right: 20px;
   line-height: 30px;
 }
 
+/* Стрелка */
+.our_staf_cards .slick-arrow{
+  width: 140px;
+  height: 105px;
+  background-color: black;
+  z-index: 3;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: center center;
+  opacity: 0.7;
+}
 
+/* Стрелка влево */
+.our_staf_cards .slick-arrow.slick-prev{
+  background-image: url(../img/arrow.svg);
+  transform: rotate(180deg);
+}
+.our_staf_cards .slick-arrow.slick-prev:hover{
+  background-color: #e8e8e8;
+}
+.our_staf_cards .slick-arrow.slick-prev::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  background-color: #e8e8e8;
+}
+/* Стрелка вправо */
+.our_staf_cards .slick-arrow.slick-next {
+  background-image: url(../img/arrow.svg);
+ }
+.our_staf_cards .slick-arrow.slick-next:hover{
+  background-color: #e8e8e8;
+ }
 .gallery-section{
   background-color: rgb(242, 242, 242)
 }
@@ -1250,7 +1282,9 @@ flex: 0 0 100%;
   padding: 30px 20px 50px;
 }
 
-
+.our_staf_card_box{
+  margin-top: 20px;
+}
 .our_staf_card{
 margin-right: 0px;
 }

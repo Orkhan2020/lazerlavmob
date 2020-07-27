@@ -48,7 +48,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $('.our_staf_cards').slick({
-    arrows:false,
+    arrows:true,
     dots:false,
     slidesToShow:5,
     autoplay:false,
