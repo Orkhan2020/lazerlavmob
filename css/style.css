@@ -1061,12 +1061,12 @@ margin-right: 20px;
   .header_top_menu_logo_box {
    flex: 60%;
    padding-left: 0px;
-   text-align: center;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
-  .header_top_menu_logo{
-	width: 150px;
-	height: 80px;
+ .header_top_menu_logo{
+	  width: 180px;
  }
   .header_top_menu_content_box {
    padding: 0px;
