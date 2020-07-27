@@ -43,7 +43,7 @@ $(document).ready(function(){
 				}
 			}
 		],
-		appendDots:$('.dots-container')
+		appendDots:$('')
 	});
 });
 $(document).ready(function(){
@@ -123,27 +123,36 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.testimonials__').slick({
     arrows:false,
-    dots:false,
+    dots:true,
     slidesToShow:3,
-    autoplay:true,
+    autoplay:false,
     speed:1000,
-    autoplaySpeed:3000,
+    autoplaySpeed:5000,
     adaptiveHeight: true,
     responsive:[
+     {
+        breakpoint: 1150,
+        settings: {
+          slidesToShow:3,
+          autoplay:true
+         }
+        },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow:1
+          slidesToShow:2,
+          autoplay:true
         }
       },
       {
         breakpoint: 550,
         settings: {
-          slidesToShow:1
+          slidesToShow:1,
+          autoplay:true
         }
       }
     ],
-    appendDots:$('.dots-testimonial_')
+    appendDots:$('dots-testimonial')
   });
 });
 
