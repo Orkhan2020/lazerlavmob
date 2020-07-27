@@ -807,7 +807,99 @@ flex: 0 0 50%;
    padding-bottom: 17px;
    cursor: pointer;
 }
+.advertising{
+  background-color: #fc5c65;
+}
+.advertising_container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.advertising_box{
+  text-align: center;
+}
 
+.advertising_title{
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+   font-weight: 400;
+   margin-bottom: 20px;
+   color: white;
+}
+
+.advertising_content{
+  font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   margin-bottom: 50px;
+   color: white;
+}
+
+.advertising_button{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(242, 242, 242);
+  color: black;
+  border-radius: 40px;
+  height: 60px;
+  line-height: 0px;
+}
+
+.advertising_button:hover{
+  background-color: grey;
+  color: white;
+}
+
+
+.our_staf_container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.our_staf_cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.our_staf_card{
+margin-right: 20px;
+
+
+}
+.our_staf_card:last-child{
+  margin-right: 0;
+}
+.our_staf_card_box{
+  position: relative;
+  width: 210px;
+}
+
+
+.our_staf_card_box:hover{
+  transform: scale(1.1);
+  transition: all 1s ease 0s;
+}
+
+
+
+.our_staf_card img{
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+
+.our_staf_card span{
+  text-align: center;
+  display: block;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300px;
+  font-size: 20px;
+  line-height: 30px;
+}
 
 
   @media(max-width: 640px){
@@ -998,6 +1090,15 @@ flex: 0 0 100%;
 }
 
 
+.our_staf_card{
+margin-right: 0px;
+}
+.our_staf_card_box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
   }
  @media (min-width: 641px) and (max-width: 960px){
   .header_top_menu{
@@ -1172,6 +1273,15 @@ flex: 0 0 100%;
   padding: 30px 20px 50px;
 }
 
+.our_staf_card_box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our_staf_card{
+margin-right: 0px;
+}
+
   }
  @media (min-width: 961px){
 .slider_box_content {
@@ -1250,6 +1360,13 @@ flex: 0 0 100%;
     visibility: hidden;
 }
 
+.advertising_title{
+  margin-bottom: 50px;
+}
+.our_staf_container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 /*==============================top_socials_container_right==================================*/
 }
 /*@media (min-width: 1600px){

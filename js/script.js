@@ -47,6 +47,41 @@ $(document).ready(function(){
 	});
 });
 $(document).ready(function(){
+  $('.our_staf_cards').slick({
+    arrows:false,
+    dots:false,
+    slidesToShow:5,
+    autoplay:false,
+    speed:1000,
+    autoplaySpeed:5000,
+    adaptiveHeight: true,
+    responsive:[
+     {
+        breakpoint: 1150,
+        settings: {
+          slidesToShow:3,
+          autoplay:true
+         }
+        },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow:2,
+          autoplay:true
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          slidesToShow:1,
+          autoplay:true
+        }
+      }
+    ],
+    appendDots:$('')
+  });
+});
+$(document).ready(function(){
   $('.testimonials__').slick({
     arrows:false,
     dots:false,
@@ -72,6 +107,7 @@ $(document).ready(function(){
     appendDots:$('.dots-testimonial_')
   });
 });
+
 
 
 
