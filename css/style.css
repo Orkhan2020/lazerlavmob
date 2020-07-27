@@ -950,10 +950,12 @@ flex: 0 0 50%;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  position: relative;
   
 }
 .our_staf_card{
 margin-right: 20px;
+
 
 
 }
@@ -991,38 +993,44 @@ margin-right: 20px;
 
 /* Стрелка */
 .our_staf_cards .slick-arrow{
-  width: 140px;
-  height: 105px;
-  background-color: black;
+  width: 48px;
+  height: 48px;
   z-index: 3;
   font-size: 0;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 48px 48px;
   background-position: center center;
   opacity: 0.7;
+ background-color: white;
+ position: absolute;
+ top: 100px;
 }
-
 /* Стрелка влево */
 .our_staf_cards .slick-arrow.slick-prev{
-  background-image: url(../img/arrow.svg);
-  transform: rotate(180deg);
+  background-image: url(../img/back_arrow_5821.png);
+  left: -10px;
 }
+/* Стрелка вправо */
+.our_staf_cards .slick-arrow.slick-next {
+  background-image: url(../img/back_arrow_5821.png);
+  transform: rotate(180deg);
+  right: -10px;
+ }
+
+
 .our_staf_cards .slick-arrow.slick-prev:hover{
-  background-color: #e8e8e8;
+
 }
 .our_staf_cards .slick-arrow.slick-prev::before{
   content: "";
   display: block;
   width: 2px;
   height: 50px;
-  background-color: #e8e8e8;
+ 
 }
-/* Стрелка вправо */
-.our_staf_cards .slick-arrow.slick-next {
-  background-image: url(../img/arrow.svg);
- }
+/
 .our_staf_cards .slick-arrow.slick-next:hover{
-  background-color: #e8e8e8;
+
  }
 .gallery-section{
   background-color: rgb(242, 242, 242)
@@ -1082,6 +1090,82 @@ margin-right: 20px;
 
  .image:hover img{
   transform: scale(1.4) rotate(15deg);
+}
+
+.questions{
+  
+
+}
+.container_questions {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.container_questions_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container_questions_picture{
+  flex: 0 1 50%;
+}
+
+.container_questions_accordion{
+  flex: 0 1 50%;
+}
+
+.questions__item{
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.questions__title{
+  cursor: pointer;
+  padding: 18px 20px;
+    color: black;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.questions__text{
+  display: none;
+  padding: 0px 20px 15px;
+    color: black;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.questions__title::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #fc5c65;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  transition: all 0.3s ease 0s;
+}
+.questions__title::after{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #fc5c65;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  transform: rotate(90deg);
+  transition: all 0.3s ease 0s;
+}
+
+.questions__title.active::after{
+  transform: rotate(0deg);
 }
 
 
@@ -1289,6 +1373,25 @@ flex: 0 0 100%;
 margin-right: 0px;
 }
 
+
+/* Стрелка влево */
+.our_staf_cards .slick-arrow.slick-prev{
+  left: -10px;
+}
+/* Стрелка вправо */
+.our_staf_cards .slick-arrow.slick-next {
+  right: -10px;
+ }
+
+
+ .container_questions_picture{
+  display: none;
+}
+
+.container_questions_accordion{
+  flex: 0 1 100%;
+}
+
   }
  @media (min-width: 641px) and (max-width: 960px){
   .header_top_menu{
@@ -1478,6 +1581,14 @@ flex: 0 0 100%;
 .our_staf_card{
 margin-right: 0px;
 }
+/* Стрелка влево */
+.our_staf_cards .slick-arrow.slick-prev{
+  left: -10px;
+}
+/* Стрелка вправо */
+.our_staf_cards .slick-arrow.slick-next {
+  right: -10px;
+ }
 
   }
  @media (min-width: 961px){
@@ -1574,21 +1685,21 @@ margin-right: 0px;
   padding-bottom: 100px;
 }
 
+
+
 .gallery_container{
   padding-top: 100px;
   padding-bottom: 100px;
 }
 /*==============================top_socials_container_right==================================*/
 }
-/*@media (min-width: 1600px){
-   .slider-item {
-     height: 100vh;
+@media (min-width: 1150px){
+
+.our_staf_cards .slick-arrow.slick-prev{
+  left: -80px;
 }
-   .slider_box_content {
-     left: 300px;
-     top:250px;
+.our_staf_cards .slick-arrow.slick-next {
+  right: -60px;
+ }
 }
-   .slider_img {
-     height: 100vh;
-}*/
-/*==============================SLIDER==================================*/
+
