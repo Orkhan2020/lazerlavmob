@@ -698,7 +698,7 @@ display: none;
 .select {
   width: 290px;
   background-color: rgba(0, 0, 0, 0);
-  margin-left: 11px;
+  text-align: center;
 }
 
 .select__head {
@@ -1142,6 +1142,7 @@ padding-bottom: 50px;
   height:60px;
   position: absolute;
   bottom: 0;
+  margin-left: 50px;
 }
 .removal_zones_content_price {
   width: 100%;
