@@ -1664,9 +1664,6 @@ width: 100%;
 .socials_chats ul{
   display: flex;
   justify-content: space-around;
-  background-color: #fc5c65;
-  opacity: 0.9;
-
 }
 .socials_chats li a {
     margin-bottom: 0px;
