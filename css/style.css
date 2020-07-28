@@ -876,7 +876,7 @@ flex: 0 0 50%;
 }
 
 .about-content {
-    padding: 160px 20px 160px 80px;  
+    padding: 160px 80px 160px 80px;  
 }
 .about-content-title {
    color:black;
@@ -1373,8 +1373,47 @@ footer{
   justify-content: center;
 }
 
+.socials_chats {
+    position: fixed;
+    right: 20px;
+    bottom: 400px;
+    z-index: 22;
+}
+.socials_chats li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    display: block;
+   /* border-radius: 50%;*/
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.socials_chats li {
+    /*width: auto;*/
+}
+.socials_chats li a.whatsapp-icon {
+  
+   background-image: url(../img/icons8-whatsapp-48.png);
+   
+}
 
+.socials_chats li a.telegram-icon {
+    background-image: url(../img/icons8-телеграмма-app-48.png);
+}
 
+.socials_chats li a.viber-icon {
+    background-image: url(../img/icons8-viber-48.png);
+}
+
+.socials_chats li a.messenger-icon {
+    background-image: url(../img/icons8-значки-facebook-в-форме-круга-48.png);
+}
 
 
 
@@ -1617,7 +1656,18 @@ margin-right: 0px;
 .slider_form_box{
 width: 100%;
 }
-
+.socials_chats {
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.socials_chats ul{
+  display: flex;
+  justify-content: center;
+}
+.socials_chats li a {
+    margin-bottom: 0px;
+}
 
 
   }
