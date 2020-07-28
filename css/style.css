@@ -1376,7 +1376,7 @@ footer{
 .socials_chats {
     position: fixed;
     right: 20px;
-    bottom: 100px;
+    bottom: 0px;
     z-index: 22;
 }
 .socials_chats li a {
@@ -1659,7 +1659,6 @@ width: 100%;
 .socials_chats {
     right: 0px;
     left: 0px;
-    bottom: 0px;
 }
 .socials_chats ul{
   display: flex;
